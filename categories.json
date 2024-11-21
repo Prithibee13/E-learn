@@ -1,0 +1,18 @@
+[
+    {
+        "icon" : "chart-line",
+        "title" : "Sales"
+    },
+    {
+        "icon" : "users",
+        "title" : "HR"
+    },
+    {
+        "icon" : "drafting-compass",
+        "title" : "Drawing"
+    },
+    {
+        "icon" : "database",
+        "title" : "Big Data"
+    }
+]

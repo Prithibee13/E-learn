@@ -2,8 +2,9 @@ import { StyleSheet, View } from "react-native"
 import HomeOutlets from "../Components/Home/HomeOutlet"
 import HomeImg from "../Components/Home/HomeImg"
 
-const HomeScreens = () => 
+const HomeScreens = (props) => 
 {
+    
     return(
         <View style={style.homeContainer}>
             <HomeImg></HomeImg>
@@ -19,6 +20,7 @@ const style = StyleSheet.create({
         flex : 1,
         justifyContent:'center',
         alignItems : 'center',
-        padding : "10%"
+        padding : "5%",
+        backgroundColor : '#fff'
     }
 })
