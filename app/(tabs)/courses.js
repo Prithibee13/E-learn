@@ -1,9 +1,12 @@
 import { View } from "react-native"
+import CoursesScreen from "../../Screens/CoursesScreen"
 
 const Courses = () =>
 {
     return(
-        <View></View>
+        <View>
+            <CoursesScreen></CoursesScreen>
+        </View>
     )
 }
 

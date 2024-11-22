@@ -12,6 +12,7 @@ export default Monicar
 const Styles = StyleSheet.create({
     Name : {
         fontSize : 20,
-        color : "#686D76"
+        color : "#686D76",
+        marginVertical : 15
     }
 })

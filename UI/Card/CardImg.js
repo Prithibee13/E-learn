@@ -14,8 +14,9 @@ export default CardImg
 const Style = StyleSheet.create({
     cardImg :
     {
-        height : 300,
-        width : 200,
-        borderRadius : 25
+        height : 200,
+        width : 150,
+        borderRadius : 25,
+        marginRight : 10
     }
 })

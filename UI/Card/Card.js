@@ -1,10 +1,10 @@
 import { View } from "react-native"
 
-const Profile = () => 
+const Card = () =>
 {
     return(
         <View></View>
     )
 }
 
-export default Profile
+return Card

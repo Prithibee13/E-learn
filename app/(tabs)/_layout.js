@@ -20,7 +20,7 @@ const TabLayout = () =>
             <Tabs.Screen name="saved" options={{
                 title: 'Saved',
                 tabBarIcon: ({ color }) => <FontAwesome size={28} name="bookmark-o" color={color}/>}}></Tabs.Screen>
-            <Tabs.Screen name="profile" options={{
+            <Tabs.Screen name="handle" options={{
                 title: 'Profile',
                 tabBarIcon: ({ color }) => <FontAwesome size={28} name="user-o" color={color}/>}}></Tabs.Screen>
 
