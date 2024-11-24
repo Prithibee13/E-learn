@@ -1,9 +1,12 @@
 import { View } from "react-native"
+import SavedScreen from "../../Screens/SavedScreen"
 
 const Saved = () =>
 {
     return(
-        <View></View>
+        <View>
+            <SavedScreen></SavedScreen>
+        </View>
     )
 }
 

@@ -16,12 +16,16 @@ const TabLayout = () =>
                 tabBarIcon: ({ color }) => <FontAwesome size={28} name="search" color={color}/>}}></Tabs.Screen>
             <Tabs.Screen name="courses" options={{
                 title: 'Courses',
+                headerShown :false,
                 tabBarIcon: ({ color }) => <FontAwesome size={28} name="play-circle-o" color={color}/>}}></Tabs.Screen>
             <Tabs.Screen name="saved" options={{
                 title: 'Saved',
+                headerShown :false,
                 tabBarIcon: ({ color }) => <FontAwesome size={28} name="bookmark-o" color={color}/>}}></Tabs.Screen>
             <Tabs.Screen name="handle" options={{
                 title: 'Profile',
+                
+                headerShown :false,
                 tabBarIcon: ({ color }) => <FontAwesome size={28} name="user-o" color={color}/>}}></Tabs.Screen>
 
         </Tabs>

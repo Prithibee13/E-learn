@@ -6,16 +6,16 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 
 const CardDetailes = (props) => 
 {
-    const { title, monicar } = props
+    const { title, monicar, color } = props
     return(
         <View style={Styles.detailesContainer}>
             <View style={Styles.headerContainer}>
-                <View>
+                <View style={Styles}>
                     <Header>{title}</Header>
                     <Monicar>{monicar}</Monicar>
                 </View>
                 <View>
-                    <FontAwesome size={20} name="bookmark" color={'#686D76'}></FontAwesome>
+                    <FontAwesome size={20} name="bookmark" color={color}></FontAwesome>
                 </View>
             </View>
         </View>
@@ -28,13 +28,13 @@ export default CardDetailes
 const Styles = StyleSheet.create({
     detailesContainer :{
         
-        width : '80%',
         padding : "2%"
     },
     headerContainer : 
     {
         flexDirection : "row",
         justifyContent:'space-between',
-
+        width : '80%',
+        padding :'5%'
     }
 })
