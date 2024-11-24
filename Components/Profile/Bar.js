@@ -1,4 +1,4 @@
-import { StyleSheet, View } from "react-native"
+import { StyleSheet, Text, View } from "react-native"
 import Header from "../../UI/Header/Header"
 
 const Bar = () => {
@@ -6,15 +6,17 @@ const Bar = () => {
         <View style={Style.BarContainer}>
             <View style={Style.Bars}>
                 <View style={Style.textContainer}>
-                    <Header>0</Header>
-                    <Header>My Courses</Header>
+                    <Text style={Style.barNumber}>0</Text>
+                    <Text style={Style.textHeader}>My Courses</Text>
                 </View>
-                <View> 
-                    <Header>2</Header>
-                    <Header>Followers</Header></View>
-                <View> 
-                    <Header>32</Header>
-                    <Header>Followings</Header></View>
+                <View>
+                    <Text style={Style.barNumber}>2</Text>
+                    <Text style={Style.textHeader}>Followers</Text>
+                </View>
+                <View>
+                    <Text style={Style.barNumber}>32</Text>
+                    <Text style={Style.textHeader}>Followings</Text>
+                </View>
             </View>
         </View>
     )
@@ -23,22 +25,34 @@ const Bar = () => {
 export default Bar
 
 const Style = StyleSheet.create({
-    BarContainer : 
+    BarContainer:
     {
-        backgroundColor : '#fff',
-        padding : '2%',
-        elevation : 1,
-        borderRadius : 20
+        backgroundColor: '#fff',
+        padding: '2%',
+        elevation: 1,
+        borderRadius: 20
     },
-    Bars : {
-        backgroundColor : '#E4E0E1',
-        flexDirection :'row',
-        justifyContent : 'space-between',
-        padding : '3%',
-        borderRadius : 20
+    Bars: {
+        backgroundColor: '#F5F5F5',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        padding: '8%',
+        borderRadius: 20
     },
-    textContainer : 
+    textContainer:
     {
         justifyContent: 'center'
+    },
+    textHeader:
+    {
+        fontSize:20,
+        fontWeight :'bold',
+        color : '#686D76'
+    },
+    barNumber :
+    {
+        fontSize:20,
+        fontWeight :'bold',
+        textAlign :'center',
     }
 })

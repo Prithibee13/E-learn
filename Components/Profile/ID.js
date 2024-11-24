@@ -12,7 +12,7 @@ const ID = () => {
                 <Header>Sally Robins</Header>
                 <View style={Style.IdLocation}>
                 <View>
-                        <FontAwesome5 name="map-pin" size={20} color="black" />
+                        <FontAwesome5 name="map-pin" size={20} color="#686D76" />
                     </View>
                     <View>
                         <Monicar>New York</Monicar>

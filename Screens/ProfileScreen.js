@@ -1,14 +1,16 @@
-import { StyleSheet, View } from "react-native"
+import { ScrollView, StyleSheet, View } from "react-native"
 import ID from "../Components/Profile/ID"
 import Bar from "../Components/Profile/Bar"
+import Stats from "../Components/Profile/Stats"
 
 const ProfileScreen = () =>
 {
     return(
-        <View style={Styles.Profile}>
+        <ScrollView style={Styles.Profile}>
             <ID></ID>
             <Bar></Bar>
-        </View>
+            <Stats></Stats>
+        </ScrollView>
     )
 }
 
@@ -17,6 +19,6 @@ export default ProfileScreen
 
 const Styles = StyleSheet.create({
     Profile : {
-        padding : '5%'
+        padding : '8%'
     }
 })
