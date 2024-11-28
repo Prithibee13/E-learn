@@ -1,14 +1,14 @@
-import { StyleSheet, View } from "react-native"
+import { StyleSheet, Text, View } from "react-native"
 import Header from "../../UI/Header/Header"
 import Button from "../../UI/Button/Buton"
 import CardImg from "../../UI/Card/CardImg"
 import CardDetailes from "../../UI/Card/CardDetailes"
 import { router } from "expo-router"
+import { MD3Colors, ProgressBar } from "react-native-paper"
 
 const Learning = () => {
 
-    const Nav = () =>
-    {
+    const Nav = () => {
         router.push('/(tabs)/courses')
     }
     return (
@@ -20,6 +20,13 @@ const Learning = () => {
                 </View>
                 <View>
                     <CardDetailes title='Becoming a Photographer' monicar="Clara Manning" colo="#686D76"></CardDetailes>
+                    <View style={Styles.cardprogressContainer}>
+                        
+                    <ProgressBar Styles={Styles.cardProress} progress={0.69} color="#000" />
+                    <Text>69% completed</Text>
+
+                    </View>
+
                 </View>
             </View>
             <Button nav={Nav} padding="5%" background="#00FF9C" marginVertical="10%" radius={20} fontSize={25} fontWeight="bold">See All</Button>
@@ -37,10 +44,18 @@ const Styles = StyleSheet.create({
         padding: "3%",
         flexDirection: 'row',
         marginVertical: "10%",
-        backgroundColor:"#fff",
+        backgroundColor: "#fff",
         elevation: 10,
-        borderRadius : 25
+        borderRadius: 25
 
+    },
+    cardprogressContainer : 
+    {
+        width : '70%',
+        marginLeft : '5%'
+    },
+    cardProress : {
+        height : 20
     }
 }
 )

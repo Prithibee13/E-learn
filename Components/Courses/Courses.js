@@ -10,21 +10,27 @@ const Courses = () =>
             title : "Becoming a Photographer",
             name : "Clara Manning",
             img: "https://i.postimg.cc/yNDkNvmn/pix4.jpg", 
-            color : "#686D76"
+            color : "#686D76",
+            complete : "69%",
+            progress : 0.69
         },
         {
             id: 2,
             title : "Design Thinking",
             name : "Chris Kinley",
             img: "https://i.postimg.cc/kg129kbB/pix3.jpg",
-            color : "#686D76"
+            color : "#686D76",
+            complete : "27%",
+            progress : 0.27
         },
         {
             id : 3,
             title : "Product Photography",
             name : "Lena Gold",
             img: "https://i.postimg.cc/L4LgfCrb/pix7.jpg",
-            color : "#00FF9C"
+            color : "#00FF9C",
+            complete : "11%",
+            progress : 0.11
         }
 
     ]
