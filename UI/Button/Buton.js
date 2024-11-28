@@ -4,13 +4,15 @@ import { View } from "react-native"
 
 const Button = (props) =>
 {
-    const {color, background, marginVertical, radius, padding, fontSize, fontWeight,nav} = props
+    const {color, background, marginVertical, radius, padding, fontSize, fontWeight,nav, height, width} = props
 
     const styles = 
     {
         backgroundColor : background,
         borderRadius : radius,
-        marginVertical : marginVertical   
+        marginVertical : marginVertical,
+        height : height,
+        width : width   
     }
     return(
         <View style={styles}>

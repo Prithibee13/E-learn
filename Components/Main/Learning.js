@@ -22,8 +22,8 @@ const Learning = () => {
                     <CardDetailes title='Becoming a Photographer' monicar="Clara Manning" colo="#686D76"></CardDetailes>
                     <View style={Styles.cardprogressContainer}>
                         
-                    <ProgressBar Styles={Styles.cardProress} progress={0.69} color="#000" />
-                    <Text>69% completed</Text>
+                    <ProgressBar style={{height : 8, borderRadius : 5}} progress={0.69} color="#00FF9C" />
+                    <Text style={Styles.cardProress}>69% completed</Text>
 
                     </View>
 
@@ -52,10 +52,13 @@ const Styles = StyleSheet.create({
     cardprogressContainer : 
     {
         width : '70%',
-        marginLeft : '5%'
+        marginHorizontal : '10%'
     },
     cardProress : {
-        height : 20
+        fontWeight: 'bold',
+        fontSize : 15,
+        color : '#686D76',
+        marginTop : 10
     }
 }
 )

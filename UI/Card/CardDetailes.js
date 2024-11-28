@@ -10,7 +10,7 @@ const CardDetailes = (props) =>
     return(
         <View style={Styles.detailesContainer}>
             <View style={Styles.headerContainer}>
-                <View style={Styles}>
+                <View style={Styles.headerDetailes}>
                     <Header>{title}</Header>
                     <Monicar>{monicar}</Monicar>
                 </View>
@@ -34,7 +34,11 @@ const Styles = StyleSheet.create({
     {
         flexDirection : "row",
         justifyContent:'space-between',
-        width : '80%',
-        padding :'5%'
+        width : '75%',
+        columnGap : 20,
+    },
+    headerDetailes : 
+    {
+        marginHorizontal : '10%'
     }
 })

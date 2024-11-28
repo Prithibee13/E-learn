@@ -30,7 +30,10 @@ const Courses = () =>
             img: "https://i.postimg.cc/L4LgfCrb/pix7.jpg",
             color : "#00FF9C",
             complete : "11%",
-            progress : 0.11
+            progress : 0.11,
+            r : 0,
+            g : 256,
+            b :156
         }
 
     ]

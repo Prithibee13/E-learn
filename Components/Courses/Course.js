@@ -16,8 +16,8 @@ const Course = (props) => {
                 <CardDetailes title={title} monicar={name} color={color}></CardDetailes>
                 <View style={styles.cardprogressContainer}>
                         
-                    <ProgressBar Styles={styles.cardProress} progress={progress} color="#00FF9C" />
-                    <Text>{complete} completed</Text>
+                    <ProgressBar style={styles.cardProress} progress={progress} color="#00FF9C" />
+                    <Text style={styles.progressText}>{complete} completed</Text>
 
                     </View>
             </View>
@@ -42,10 +42,16 @@ const styles = StyleSheet.create({
     cardprogressContainer : 
     {
         width : '70%',
-        marginLeft : '5%',
+        marginHorizontal : '10%'
     },
     cardProress : {
-        height : 20,
-        marginVertical : 5
+        height : 8,
+        marginVertical : 5,
+        borderRadius : 5
+    },
+    progressText : {
+        color : '#686D76',
+        fontSize : 15,
+        fontWeight : 'bold'
     }
 })
