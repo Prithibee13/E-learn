@@ -12,7 +12,10 @@ const Courses = () =>
             img: "https://i.postimg.cc/yNDkNvmn/pix4.jpg", 
             color : "#686D76",
             complete : "69%",
-            progress : 0.69
+            progress : 0.69,
+            r : 104,
+            g : 109,
+            b :118
         },
         {
             id: 2,
@@ -21,7 +24,10 @@ const Courses = () =>
             img: "https://i.postimg.cc/kg129kbB/pix3.jpg",
             color : "#686D76",
             complete : "27%",
-            progress : 0.27
+            progress : 0.27,
+            r : 104,
+            g : 109,
+            b :118
         },
         {
             id : 3,

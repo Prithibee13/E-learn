@@ -1,9 +1,12 @@
 import { View } from "react-native"
+import SearchScreen from "../../Screens/SearchScreen"
 
 const Search = () =>
 {
     return(
-        <View></View>
+        <View>
+            <SearchScreen></SearchScreen>
+        </View>
     )
 }
 
