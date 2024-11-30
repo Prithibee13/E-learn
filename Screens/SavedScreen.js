@@ -1,12 +1,14 @@
-import { View } from "react-native"
+import { ScrollView, View } from "react-native"
 import Saves from "../Components/Saved/Saves"
+import SaveHeader from "../Components/Saved/SaveHeader"
 
 const SavedScreen = () =>
 {
     return(
-        <View>
+        <ScrollView>
+            <SaveHeader></SaveHeader>
             <Saves></Saves>
-        </View>
+        </ScrollView>
     )
 }
 

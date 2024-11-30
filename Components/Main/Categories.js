@@ -15,7 +15,11 @@ const Categories = () => {
         {
             id: 2,
             icon: "users",
-            title: "HR"
+            title: "HR",
+            color  : "#00FF9C",
+            r : 0,
+            g : 255,
+            b : 156
         },
         {
             id: 3,
@@ -25,8 +29,12 @@ const Categories = () => {
         {
             id: 4,
             icon: "database",
-            title: "Big Data"
-        }
+            title: "Big Data",
+            color : "#00FF9C",
+            r : 0,
+            g : 255,
+            b : 156
+        },
     ]
 
 
@@ -54,8 +62,7 @@ const styles = StyleSheet.create({
     gridContainer :
     {
         flexDirection : 'row',
-        columnGap : 30,
-        justifyContent : 'space-evenly',
+        columnGap : 20,
         marginVertical : 20
     }
 

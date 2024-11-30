@@ -10,10 +10,20 @@
     ],
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "2fbf21c4-08e7-4841-b020-f6272a41de8b"
+      }
+    },
+    "android": {
+      "package": "com.prithibee13.elearn"
+    }
   },
   "web": {
     "bundler": "metro"
   }
-
 }
