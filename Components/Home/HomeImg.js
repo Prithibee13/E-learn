@@ -16,14 +16,13 @@ export default HomeImg
 const styles = StyleSheet.create({
     HomeContainer:
     {
-        flex : 1,
-        alignItems: 'center',
-        justifyContent: 'center'
+        padding : '5%',
     }
     ,
     img:
     {
         width: 450,
-        height: 300
+        height: 300,
+        marginVertical : '10%'
     }
 })

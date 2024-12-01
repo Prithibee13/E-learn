@@ -9,7 +9,7 @@ const HomeOutlet = (props) => {
         router.push('/(tabs)/landing')
     }
     return (
-        <View>
+        <View style={styles.outletContainer}>
             <Header>Discover passion</Header>
             <View style={styles.outletTextContainer}>
                 <Text style={styles.outlettext}>Find out topics you find interesting, Learn a new skill & connect with people that are passionate about simmilar topics....</Text>
@@ -23,7 +23,10 @@ export default HomeOutlet
 
 
 const styles = StyleSheet.create({
-   
+   outletContainer :{
+    padding : '5%'
+   },
+
     outletTextContainer : 
     {
         marginVertical : 10
