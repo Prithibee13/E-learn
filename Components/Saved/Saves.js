@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { ScrollView, StyleSheet, View } from "react-native"
 import Save from "./Save"
+import { router } from "expo-router"
 
 const Saves = () =>
 {
@@ -35,10 +36,18 @@ const Saves = () =>
         },
     ]
 
+    const handleSaveCourse = (id) =>
+    {
+        if (id == 2)
+        {
+            router.push('/ioscourse')   
+        }
+    }
+
     return(
         <ScrollView style={styles.savedContainer}>
             {
-                saved.map(save=><Save key={save.id} item={save}></Save>)
+                saved.map(save=><Save key={save.id} press = {handleSaveCourse} item={save}></Save>)
             }
         </ScrollView>
     )
@@ -49,6 +58,6 @@ export default Saves
 const styles = StyleSheet.create({
     savedContainer : 
     {
-        padding : '5%'
+        padding : '6%'
     }
 })

@@ -25,5 +25,6 @@
   },
   "web": {
     "bundler": "metro"
-  }
+  },
+  "icon" : "https://i.postimg.cc/1tbWb3Jf/online-course.png"
 }

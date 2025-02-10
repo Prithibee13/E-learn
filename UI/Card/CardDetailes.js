@@ -28,7 +28,7 @@ export default CardDetailes
 const Styles = StyleSheet.create({
     detailesContainer :{
         
-        padding : "2%"
+       marginTop : '3%'
     },
     headerContainer : 
     {

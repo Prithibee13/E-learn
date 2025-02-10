@@ -1,13 +1,14 @@
-import { StyleSheet, View } from "react-native"
+import { Pressable, StyleSheet, View } from "react-native"
 import CardImg from "../../UI/Card/CardImg"
 import CardDetailes from "../../UI/Card/CardDetailes"
 import Button from "../../UI/Button/Buton"
 
 const Save = (props) => {
-    const { item } = props
-    const { title, name, img } = item
+    const { item, press } = props
+    const { title, name, img, id } = item
     return (
-        <View style={Style.saveContainer}>
+        <Pressable onPress={()=>press(id)}>
+             <View style={Style.saveContainer}>
             <View>
 
                 <CardImg url={img}></CardImg>
@@ -20,6 +21,8 @@ const Save = (props) => {
                 </View>
             </View>
         </View>
+        </Pressable>
+       
     )
 }
 export default Save
@@ -32,8 +35,9 @@ const Style = StyleSheet.create({
         flexDirection: 'row',
         marginVertical: "10%",
         backgroundColor: "#fff",
-        padding: '3%',
+        padding: 10,
         borderRadius: 25,
+        width : '100%',
     },
     btnContainer : 
     {
