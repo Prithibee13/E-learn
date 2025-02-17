@@ -46,7 +46,8 @@ export default OverViews
 
 const style = StyleSheet.create({
     overviewContainer : {
-        padding : '5%'
+        padding : '5%',
+        marginBottom : "30%"
     },
     overviewTitle : {
         fontSize : 30,
